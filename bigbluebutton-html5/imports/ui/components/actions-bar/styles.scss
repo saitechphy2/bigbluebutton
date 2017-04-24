@@ -1,0 +1,30 @@
+@import "../../stylesheets/variables/_all";
+
+.actionsbar,
+.left,
+.center {
+  display: flex;
+  flex-direction: row;
+}
+
+.left,
+.center {
+  flex: 1;
+  justify-content: center;
+
+  > * {
+    margin: 0 $line-height-computed;
+  }
+}
+
+.left{
+  position: absolute;
+}
+
+.center {
+  align-items: center;
+}
+
+.circleGlow > :first-child{
+    box-shadow: 0 0 .15rem #FFF !important;
+}
